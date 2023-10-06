@@ -1,0 +1,40 @@
+.container-split{
+    display: flex;
+    gap: var(--spacing-16);
+    padding: var(--spacing-36);
+}
+
+.filter{
+    width: 243.04px;
+    height: 493.928px;
+}
+.price {
+    max-width: 60px;
+    border-radius: 6px;
+    border: 2px solid var(--dark-bg-solid)
+}
+
+.split__text {
+    color: var(--dark-solid);
+     font-family: var(--base-font);
+     font-size: var(--font-large);
+     font-style: normal;
+     font-weight: 500;
+
+}
+
+.price-value {
+    color: var(--dark-solid);
+    font-family: var(--base-font);
+    font-size: var(--font-small);
+    font-style: normal;
+    font-weight: 500;
+}
+
+.checkbox {
+    color: var(--dark-solid);
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+    font-style: normal;
+    font-weight: 500;
+}
