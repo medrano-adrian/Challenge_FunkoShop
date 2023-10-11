@@ -5,7 +5,8 @@
 }
 
 .card-product__article {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: var(--spacing-68);
   color: var(--dark-900);
@@ -14,6 +15,7 @@
 .card-product__cover-img {
   display: flex;
   position: relative;
+  height: 550px;
 }
 
 .card-product__cover-img img {
@@ -110,7 +112,7 @@
 /* Products related */
 
 .related__products {
-  margin-bottom: 128px;
+  margin-bottom: var(--spacing-128);
 }
 
 .related__products--title {
