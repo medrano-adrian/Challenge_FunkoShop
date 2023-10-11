@@ -95,12 +95,24 @@
   width: 20px;
   height: 20px;
 }
+
+.form-cart__button-add:hover,
+.form-cart__button-subtract:hover {
+  background-color: var(--primary-solid);
+  transition: 0.3s ease-in-out;
+}
+
 .form-cart__submit {
   font-size: var(--font-medium);
   background-color: var(--primary-solid);
   color: var(--light-font-solid);
   border: none;
   padding: 7.95px 15px;
+}
+
+.form-cart__submit:hover {
+  background-color: var(--dark-bg-solid);
+  transition: 0.3s ease-in-out;
 }
 
 .card-product__payment-link {
