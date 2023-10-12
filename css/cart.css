@@ -211,56 +211,85 @@ header {
   padding: var(--spacing-28);
 
 }
-
-.card-item__img img {
-  width: 118.762px;
-  height: 118px;
-  flex-shrink: 0;
+.cart-item {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
 }
 
-.card-item__title {
+.cart-item__img {
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+  max-width: 100px; /* Ajusta el ancho de la imagen según tus necesidades */
+}
+
+.cart-item__content {
+  flex: 1; /* Permite que el contenido ocupe todo el espacio restante */
+}
+
+.card-item__img img {
+  width:118.76px;
+height: 118px;   
+}
+
+.cart-item__title {
   font-family: var(--base-font);
   font-size: var(--font-large);
   text-transform: uppercase;
   font-weight: 700;
 }
 
-.card-item__licence {
+.cart-item__licence {
   font-family: var(--base-font);
   font-size: var(--font-medium);
   text-transform: uppercase;
   font-weight: 300;
 }
 
-.card-item__price {
+.cart-item__price {
   font-family: var(--base-font);
   font-size: var(--font-xsmall);
   text-transform: uppercase;
   font-weight: 300;
 }
-
-
-.card-item__quantity-input {
-  border: 0.5px solid var(--dark-300);
-  background: var(--light-bg-solid);
-  height: 40px;
-  text-align: center;
-  
-}
-
-
-.cart-btn{
-  border: none;
-  width: 8px;
-  height: 8px;
-  background-color: var(--primary-solid);
-  color: var(--light-font-solid);
-  cursor: pointer;
+.cart-input-container {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+}
+.cart-input-btn-container{
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
+.quantity-input {
+  height: 44px;
+  margin-right: 5px;
+  padding: 5px;
+  text-align: center;  
+}
+
+.cart-input-btn {  
+  width: 20px;
+  height: 20px;
+  margin: 2px;  
+  background-color: var(--primary-solid);
+  border: none; 
+  color: var(--light-font-solid);
+  font-size: var(--font-small);
+  text-align: center;
+}
+
+.cart-item__exit-btn{  
+  border: solid 1px var(--primary-solid); 
+  color: var(--light-font-solid);
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  color: var(--primary-solid);
+  font-size: var(--font-small);
+  font-weight: 200;
+}
 
 /* FOOTER */
 
