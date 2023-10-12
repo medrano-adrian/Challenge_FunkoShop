@@ -66,25 +66,30 @@
           <img src="../img/star-wars/baby-yoda-1.webp"
             alt="Figura coleccionable de Funko de Grogu de la serie The Mandalorian"></a>
         </picture>
-      </div>
-      <div class="card-item__content">
-        <h2 class="card-item__title">baby yoda blueball</h2>
-        <h4 class="card-item__licence">star wars</h4>
-        <br>
-        <p class="card-item__price">precio: $1799.99</p>
-      </div>
-      <div>
-        <div class="card-item__input">
-          <!-- Campo de entrada de cantidad -->
-          <input type="number" class="card-item__quantity-input" id="quantity" value="1" min="0" max="100" step="1">
-          <!-- Botón de menos -->
-          <button class="cart-btn" id="decrement">-</button>
-          <!-- Botón de más -->
-          <button class="cart-btn" id="increment">+</button>
+
+        <div class="cart-item__content">
+          <h2 class="cart-item__title">baby yoda blueball</h2>
+          <h4 class="cart-item__licence">star wars</h4>
+          <br>
+          <p class="cart-item__price">precio: $1799.99</p>
         </div>
       </div>
+
       <div>
-        <h2 class="card-item__total-price">$1799.99</h2>
+        <div class="cart-input-container">
+          <!-- Campo de entrada de cantidad -->
+          <input type="number" class="quantity-input" id="quantity" value="1" min="0" max="100" step="1">
+          <div class="cart-input-btn-container">
+          <!-- Botón de más -->
+          <button class="cart-input-btn" id="increment">+</button>
+          <!-- Botón de menos -->
+          <button class="cart-input-btn" id="decrement">-</button>
+        </div>          
+        </div>
+      </div>
+
+      <div>
+        <h2 class="cart-item__total-price">$1799.99</h2>
       </div>
       <div>
         <button class="cart-item__exit-btn">X</button>
@@ -97,23 +102,24 @@
           <img src="../img/pokemon/pidgeotto-1.webp"
             alt="Figura coleccionable de Funko de Grogu de la serie The Mandalorian"></a>
         </picture>
-      </div>
-      <div class="card-item__content">
-        <h2 class="card-item__title">pidgeotto</h2>
-        <h4 class="card-item__licence">pokemon</h4>
-        <br>
-        <p class="card-item__price">precio: $1799.99</p>
+        <div class="cart-item__content">
+          <h2 class="cart-item__title">pidgeotto</h2>
+          <h4 class="cart-item__licence">pokemon</h4>
+          <br>
+          <p class="cart-item__price">precio: $1799.99</p>
+        </div>
       </div>
       <div>
-        <div class="card-item__input">
+        <div class="cart-input-container">
           <!-- Campo de entrada de cantidad -->
-          <input type="number" class="card-item__quantity-input" id="quantity" value="1" min="0" max="100" step="1">
+          <input type="number" class="quantity-input" id="quantity" value="1" min="0" max="100" step="1">
+          <div class="cart-input-btn-container"><!-- Botón de más -->
+          <button class="cart-input-btn" id="increment">+</button>
           <!-- Botón de menos -->
-          <button class="cart-btn" id="decrement">-</button>
-          <!-- Botón de más -->
-          <button class="cart-btn" id="increment">+</button>
+          <button class="cart-input-btn" id="decrement">-</button>
+        </div>          
         </div>
-      </div>     
+      </div>
       <div>
         <h2 class="card-item__total-price">$1799.99</h2>
       </div>
