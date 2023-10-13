@@ -38,3 +38,15 @@
     font-style: normal;
     font-weight: 500;
 }
+
+.shop-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: var(--spacing-24);
+}
+
+.pagination {
+    text-align: center;
+}
+
