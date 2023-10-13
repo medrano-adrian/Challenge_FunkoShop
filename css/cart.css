@@ -24,15 +24,15 @@
   box-shadow: 0px 0px 10px 0px var(--dark-300);
   gap: var(--spacing-24);
   margin-top: var(--spacing-68);
+  
 }
 
 .cart-cointainer__title-list {
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
   align-items: center;
-  padding: var(--spacing-20);
-
+  justify-content:space-around;
+  padding: var(--spacing-24);  
 }
 
 .cart-cointainer__title-list li {
@@ -40,7 +40,11 @@
   font-size: var(--font-small);
   text-transform: uppercase;
   font-weight: 500;
-  padding: 0 var(--spacing-20) 0 var(--spacing-28);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+  /* padding: var(--spacing-20); */  
+  padding: 0 var(--spacing-16) 0 var(--spacing-16);
 }
 
 .cart-cointainer__items {
@@ -52,14 +56,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-20);
+  padding: var(--spacing-16);
 }
 
 .cart-detail-container {
   display: flex;
-  width: 410px;
-  align-items: center;  
-
+  width: 400px;
+  align-items: center;
+  padding: var(--spacing-16);
 }
 
 .cart-quantity-container,
@@ -144,13 +148,16 @@
   cursor: pointer;
 }
 
+.cart-item__exit{
+  margin-right: var(--spacing-28);
+}
 .cart-item__exit-btn {
   border: solid 1px var(--primary-solid);
   color: var(--light-font-solid);
   border-radius: 50%;
   width: 28px;
   height: 28px;
-  flex-shrink: 0;
+  flex-shrink:0;  
   color: var(--primary-solid);
   font-size: var(--font-small);
   font-weight: 200;
@@ -172,23 +179,25 @@
   text-transform: uppercase;
   display: inline-block;
   border-bottom: 5px solid var(--primary-solid);
-  margin-bottom: var(--spacing-20);
   padding-top: var(--spacing-68);
+  
 }
 
 .cart-resume__items-container {
   width: 572px;
   height: auto;
-  padding: var(--spacing-20);
+  padding: var(--spacing-28);
   border-radius: 10px;
   background-color: var(--light-bg-solid);
   box-shadow: 0px 0px 10px 0px var(--dark-300);
   gap: var(--spacing-24);
+  margin-top: var(--spacing-24);  
 }
 
 .cart-resume__items {
   display: flex;
   justify-content: space-between;
+  padding: var(--spacing-20);
 }
 
 .resume-text {
@@ -231,6 +240,6 @@
   color: var(--light-font-solid);
   margin: var(--spacing-12) 0 var(--spacing-12);
   text-align: center;
-  padding: var(--spacing-16);
+  padding: var(--spacing-12);
 }
 
