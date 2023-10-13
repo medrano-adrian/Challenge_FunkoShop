@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap");
+
+/* definimos variables */
+:root {
+  /* Palette */
+  --primary-solid: #ff3333;
+  --primary-900: rgba(255, 51, 51, 0.9);
+  --primary-500: rgba(255, 51, 51, 0.5);
+  --primary-300: rgba(255, 51, 51, 0.3);
+
+  --secondary-solid: #1d84b5;
+  --secondary-900: rgba(29, 132, 181, 0.9);
+  --secondary-500: rgba(29, 132, 181, 0.5);
+  --secondary-300: rgba(29, 132, 181, 0.3);
+
+  --dark-solid: #1f1f1f;
+  --dark-900: rgba(31, 31, 31, 0.9);
+  --dark-500: rgba(31, 31, 31, 0.5);
+  --dark-300: rgba(31, 31, 31, 0.5);
+
+  --dark-bg-solid: #30343f;
+  --light-bg-solid: #fafaff;
+  --light-font-solid: #ffffff;
+  /* Typography */
+  --base-font: "Inter", sans-serif;
+  --alternative-font: "Raleway", sans-serif;
+
+  /* Font-sizes */
+  --font-display: 4.6em;
+  --font-jumbo: 3.8em;
+  --font-xlarge: 3em;
+  --font-large: 2.4em;
+  --font-medium: 1.8em;
+  --font-small: 1.6em;
+  --font-xsmall: 1.4em;
+
+  /* Spacings */
+  --spacing-128: 12.8rem;
+  --spacing-68: 6.8rem;
+  --spacing-36: 3.6rem;
+  --spacing-28: 2.8rem;
+  --spacing-24: 2.4rem;
+  --spacing-20: 2rem;
+  --spacing-16: 1.6rem;
+  --spacing-12: 1.2rem;
+  --spacing-8: 0.8rem;
+}
+
+/* NORMALIZACION DE ESTILOS */
+/* sacamos los margenes y los rellenos por defecto usando el selector universal */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* normalizo el tamaño para que el em valga 10px y se mas facil de calcular */
+html {
+  font-family: var(--base-font);
+  font-size: 62.5%;
+  color: #111111;
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+}
+
+/*   MAIN  */
+.cart-container {
+  padding: var(--spacing-128);
+  background-color: var(--light-bg-solid);
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.cart-title {
+  font-family: var(--alternative-font);
+  font-size: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 5px solid var(--primary-solid);
+}
+
+.cart-cointainer__title {
+  border-radius: 10px;
+  background: var(--light-bg-solid);
+  box-shadow: 0px 0px 10px 0px var(--dark-300);
+  gap: var(--spacing-24);
+  margin-top: var(--spacing-68);
+}
+
+.cart-cointainer__title-list {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  padding: var(--spacing-20);
+
+}
+
+.cart-cointainer__title-list li {
+  font-family: var(--base-font);
+  font-size: var(--font-small);
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0 var(--spacing-20) 0 var(--spacing-28);
+}
+
+.cart-cointainer__items {
+  border-radius: 10px;
+  background: var(--light-bg-solid);
+  box-shadow: 0px 0px 10px 0px var(--dark-300);
+  gap: var(--spacing-24);
+  margin-top: var(--spacing-28);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-20);
+}
+
+.cart-detail-container {
+  display: flex;
+  width: 410px;
+  align-items: center;  
+
+}
+
+.cart-quantity-container,
+.cart-total-container {  
+  display: flex;
+  flex-direction: column;  
+}
+
+.cart-item__total-price{
+  padding: 0 var(--spacing-36) 0;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+}
+
+.cart-item__img {
+  margin-right: 10px;
+  max-width: 100px;
+}
+
+.cart-item__content {
+  flex: 1;
+  width: 273px;
+}
+
+.card-item__img img {
+  width: 118.76px;
+  height: 118px;
+  margin-right: var(--spacing-8);
+}
+
+.cart-item__title {
+  font-family: var(--base-font);
+  font-size: var(--font-large);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.cart-item__licence {
+  font-family: var(--base-font);
+  font-size: var(--font-medium);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.cart-item__price {
+  font-family: var(--base-font);
+  font-size: var(--font-xsmall);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.cart-input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 var(--spacing-36);
+}
+
+.cart-input-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart-input {
+  width: 90px;
+  height: 44px;  
+  text-align: center;
+}
+
+.cart-input-btn {
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+  background-color: var(--primary-solid);
+  border: none;
+  color: var(--light-font-solid);
+  font-size: var(--font-small);
+  text-align: center;
+  cursor: pointer;
+}
+
+.cart-item__exit-btn {
+  border: solid 1px var(--primary-solid);
+  color: var(--light-font-solid);
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  color: var(--primary-solid);
+  font-size: var(--font-small);
+  font-weight: 200;
+  cursor: pointer;
+}
+
+/* RESUME */
+.resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;  
+}
+
+.cart-title__two {
+  font-family: var(--alternative-font);
+  font-size: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 5px solid var(--primary-solid);
+  margin-bottom: var(--spacing-20);
+  padding-top: var(--spacing-68);
+}
+
+.cart-resume__items-container {
+  width: 572px;
+  height: auto;
+  padding: var(--spacing-20);
+  border-radius: 10px;
+  background-color: var(--light-bg-solid);
+  box-shadow: 0px 0px 10px 0px var(--dark-300);
+  gap: var(--spacing-24);
+}
+
+.cart-resume__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume-text {
+  text-align: left;
+  font-family: var(--base-font);
+  font-size: var(--font-small);
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-top: var(--spacing-20);
+}
+
+.resume-value {
+  text-align: right;
+  font-family: var(--base-font);
+  font-size: var(--font-small);
+  color: var(--dark-500);
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-top: var(--spacing-20);
+}
+
+#resume-text__total {
+  font-size: var(--font-medium);
+  font-weight: 700;
+}
+
+.cart-resume__items-total {
+  border-top: 2px solid var(--primary-solid);
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-item__tag {
+  width: 572px;
+  font-size: var(--font-jumbo);
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--primary-solid);
+  color: var(--light-font-solid);
+  margin: var(--spacing-12) 0 var(--spacing-12);
+  text-align: center;
+  padding: var(--spacing-16);
+}
+
