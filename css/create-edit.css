@@ -99,6 +99,11 @@ textarea {
   font-weight: 600;
 }
 
+.form-btn:hover {
+  background-color: var(--dark-bg-solid);
+  transition: 0.3s ease-in-out;
+}
+
 /*** Estilos page Edit ***/
 
 .cont-uploaded-img {
