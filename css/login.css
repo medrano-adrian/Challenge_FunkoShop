@@ -1,0 +1,94 @@
+.container_login{
+    height: 341px;
+    padding: var(--spacing-24) var(--spacing-68);
+    margin: 20px;
+}
+h1{
+    font-family: Raleway;
+    font-size: var(--spacing-36);
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+#form{
+    width: 382.87px;
+    height: 98.72px;
+    top: 256.07px;
+    left: 528.56px;
+    margin: 10px auto;
+    top: 50%;
+}
+.form__labele{
+    font-family: Inter;
+    font-size: var(--spacing-24);
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+#email{
+    width: 208.6px;
+    height: 25.18px;
+    top: 261.07px;
+    left: 702.83px;
+    font-family: Inter;
+    font-size: var(--spacing-16);
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+.form__labelep{
+    font-family: Inter;
+    font-size: var(--spacing-24);
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+#password{
+    width: 208.6px;
+    height: 25.18px;
+    top: 261.07px;
+    left: 702.83px;
+    font-family: Inter;
+    font-size: var(--spacing-16);
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+.btn-enviar{
+    width: 103px;
+    height: 39.06px;
+    top: 390.78px;
+    left: 583.26px;
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    font-family: Inter;
+    font-size: var(--spacing-12);
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;  
+    border: none;  
+}
+.input_enviar{
+    width: 129.25px;
+    height: 22px;
+    top: 399.32px;
+    left: 727.49px;
+    border-radius: 3px;
+   font-size: var(--spacing-16);
+}
+p{
+    font-family: Inter;
+    font-size: var(--spacing-12);
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #1D84B5;
+    text-align: center;
+
+}
