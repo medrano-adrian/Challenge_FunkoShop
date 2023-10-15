@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <title>Admin - Funkoshop</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
+                <a href="./index.html">
+                    <img src="../img/branding/logo_light_horizontal.svg" alt="isoLogotipo de la Marca Funkoshop">
+                </a>
+            </picture>
+
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/shop.html">VER TIENDA</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="./pages/admin.html">ADMIN</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="index.html">SALIR</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container_admin">
+        <section>
+            <article class="search">
+               <img class="search__logo" src="../img/icons/plus_icon.svg" alt="isoLogotipo de busqueda">
+                <input class="input" type="text" placeholder="código, nombre o categoria" name="busqueda"><br>
+            </article>
+        </section>
+
+        <section class="container_section">
+            <article class="add">
+                <h1>LISTADO DE PRODUCTOS</h1>
+
+                <h3>AGREGAR</h3>
+                <img class="add__logo" src="../img/icons/plus_icon.svg" alt="isoLogotipo de agregar">
+            </article>
+
+            <article id="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="encabezados encabezados__id">ID</th>
+                            <th class="encabezados encabezados__cod">Código</th>
+                            <th class="encabezados encabezados__nom">Nombre del Producto</th>
+                            <th class="encabezados encabezados__cat">Categoria</th>
+                            <th class="encabezados"></th>
+                            <th class="encabezados"></th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td class="datos">1</td> <td class="datos">STW001001</td> <td class="datos datos_nom">Baby Yoda Blueball</td> <td class="datos">STAR WARS</td> <td class="datos"><img class="datos_img" src="../img/icons/edit_pencil.svg" alt="icono de edit"></td> <td class="datos"><img class="datos_img" src="../img/icons/delete_trash.svg" alt="icono de eleted"></td>
+                        </tr>
+                        <tr>
+                            <td class="datos">2</td> <td class="datos">STW001002</td> <td class="datos datos_nom">Boba Fett Fighter</td> <td class="datos">STAR WARS</td> <td class="datos"><img class="datos_img" src="../img/icons/edit_pencil.svg" alt="icono de edit"></td> <td class="datos"><img class="datos_img" src="../img/icons/delete_trash.svg" alt="icono de eleted"></td>
+                        </tr>
+                     <tr>
+                            <td class="datos">3</td> <td class="datos">STW001003</td> <td class="datos datos_nom">Luke Skylwalker & Grogu</td> <td class="datos">STAR WARS</td> <td class="datos"><img class="datos_img" src="../img/icons/edit_pencil.svg" alt="icono de edit"></td> <td class="datos"><img class="datos_img" src="../img/icons/delete_trash.svg" alt="icono de eleted"></td>
+                        </tr>
+                        <tr>
+                            <td class="datos">4</td> <td class="datos">STW001004</td> <td class="datos datos_nom">Stormtrooper Lightsaber</td> <td class="datos">STAR WARS</td> <td class="datos"><img class="datos_img" src="../img/icons/edit_pencil.svg" alt="icono de edit"></td> <td class="datos"><img class="datos_img" src="../img/icons/delete_trash.svg" alt="icono de eleted"></td>
+                        </tr>
+                        <tr>
+                            <td class="datos">5</td> <td class="datos">PKM001001</td> <td class="datos datos_nom">Charmander Smiley</td> <td class="datos">POKEMON</td> <td class="datos"><img class="datos_img" src="../img/icons/edit_pencil.svg" alt="icono de edit"></td> <td class="datos"><img class="datos_img" src="../img/icons/delete_trash.svg" alt="icono de eleted"></td>
+                        </tr>
+                        <tr>
+                            <td class="datos">6</td> <td class="datos">PKM001002</td> <td class="datos datos_nom">Dragonite Hi!</td> <td class="datos">POKEMON</td> <td class="datos"><img class="datos_img" src="../img/icons/edit_pencil.svg" alt="icono de edit"></td> <td class="datos"><img class="datos_img" src="../img/icons/delete_trash.svg" alt="icono de eleted"></td>
+                        </tr>
+                        <tr>
+                            <td class="datos">7</td> <td class="datos">PKM001003</td> <td class="datos datos_nom">Pidgeotto Flying</td> <td class="datos">POKEMON</td> <td class="datos"><img class="datos_img" src="../img/icons/edit_pencil.svg" alt="icono de edit"></td> <td class="datos"><img class="datos_img" src="../img/icons/delete_trash.svg" alt="icono de eleted"></td>
+                        </tr>
+                        <tr>
+                            <td class="datos">8</td> <td class="datos">PKM001004</td> <td class="datos datos_nom">Pikachu Smiley</td> <td class="datos">POKEMON</td> <td class="datos"><img class="datos_img" src="../img/icons/edit_pencil.svg" alt="icono de edit"></td> <td class="datos"><img class="datos_img" src="../img/icons/delete_trash.svg" alt="icono de eleted"></td>
+                        </tr>
+                        <tr>
+                            <td class="datos">9</td> <td class="datos">PKM001005</td> <td class="datos datos_nom">Vulpix Fancy</td> <td class="datos">POKEMON</td> <td class="datos"><img class="datos_img" src="../img/icons/edit_pencil.svg" alt="icono de edit"></td> <td class="datos"><img class="datos_img" src="../img/icons/delete_trash.svg" alt="icono de eleted"></td>
+                        </tr>
+                        <tr>
+                            <td class="datos">10</td> <td class="datos">HPT001001</td> <td class="datos datos_nom">Harry Potter & Hegwid</td> <td class="datos">HARRY POTTER</td> <td class="datos"><img class="datos_img" src="../img/icons/edit_pencil.svg" alt="icono de edit"></td> <td class="datos"><img class="datos_img" src="../img/icons/delete_trash.svg" alt="icono de eleted"></td>
+                        </tr>
+                        <tr>
+                            <td class="datos">11</td> <td class="datos">HPT001002</td> <td class="datos datos_nom">Herminione Ball Dress</td> <td class="datos">HARRY POTTER</td> <td class="datos"><img class="datos_img" src="../img/icons/edit_pencil.svg" alt="icono de edit"></td> <td class="datos"><img class="datos_img" src="../img/icons/delete_trash.svg" alt="icono de eleted"></td>
+                        </tr>
+                        <tr>
+                            <td class="datos">12</td> <td class="datos">HPT001003</td> <td class="datos datos_nom">Luna Lovegood Lion Mask</td> <td class="datos">HARRY POTTER</td> <td class="datos"><img class="datos_img" src="../img/icons/edit_pencil.svg" alt="icono de edit"></td> <td class="datos"><img class="datos_img" src="../img/icons/delete_trash.svg" alt="icono de eleted"></td>
+                        </tr>
+                        <tr>
+                            <td class="datos">13</td> <td class="datos">HPT001004</td> <td class="datos datos_nom">Snape Patronus</td> <td class="datos">HARRY POTTER</td> <td class="datos"><img class="datos_img" src="../img/icons/edit_pencil.svg" alt="icono de edit"></td> <td class="datos"><img class="datos_img" src="../img/icons/delete_trash.svg" alt="icono de eleted"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section>
+            <nav class="navbar container">
+                <ul class="navbar__items">
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./pages/shop.html">SHOP</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./pages/register.html">REGISTRARSE</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./pages/login.html">INGRESAR</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="./pages/contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+
+                <picture>
+                    <img src="../img/branding/isotype.svg" alt="Isotipo de la Marca Funkoshop">
+                </picture>
+            </nav>
+            
+        </section>
+
+        <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+</body>
+</html>
