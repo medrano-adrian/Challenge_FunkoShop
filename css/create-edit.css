@@ -1,93 +1,30 @@
-/*** Estilos compartidos para paginas del Administrador***/
-
-.form-label {
-  margin-right: 20px;
-}
-
-.form-input,
-.input-stock {
-  height: 22px;
-  width: 130px;
-  border: none;
-  border-bottom: 2px solid var(--primary-solid);
-  font-size: 18px;
-  margin-bottom: 36px;
-  margin-right: 10px;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: #b9b9b9;
-}
-
-.btn-form {
-  border: none;
-  width: 175px;
-  height: 44px;
-  background-color: var(--primary-solid);
-  color: var(--light-font-solid);
-  font-size: 14px;
-  font-weight: 600;
-  margin-right: 34px;
-}
-
 /**** Estilos comptartidos en pages: Create y Edit ****/
 
-.create-item,
-.edit-item {
+.create-item__section,
+.edit-item__section {
   padding: 36px 0px;
 }
 
 .create-item__title,
 .edit-item__title {
   font-size: var(--font-jumbo);
+  margin-bottom: 36px;
 }
 
 .form-item {
   font-size: var(--font-large);
   width: 827px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
 }
 
-.cont-categ-licencia {
-  margin: 36px 0;
+.cont-categ-license {
   display: flex;
   justify-content: space-between;
 }
 
-.name-product {
-  width: 295px;
-}
-
-textarea {
-  width: 100%;
-  height: 194px;
-  border-radius: 4px;
-  margin-bottom: 36px;
-  border: 2px solid var(--dark-bg-solid);
-  padding: 10px;
-}
-
-textarea,
-input {
-  font-family: var(--base-font);
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.input-stock,
-.input-desc {
-  width: 55px;
-  text-align: center;
-}
-
-.input-imagenes {
-  margin-bottom: 36px;
-  font-family: Arial;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.select-form {
+.form-select {
   color: #b9b9b9;
   width: 243px;
   height: 44px;
@@ -99,20 +36,79 @@ input {
   font-weight: 500;
 }
 
-.select-form:focus {
+.form-select:focus {
   color: var(--dark-solid);
+}
+
+.form-input {
+  height: 22px;
+  width: 130px;
+  font-family: var(--base-font);
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  border-bottom: 2px solid var(--primary-solid);
+}
+
+.form-input::placeholder,
+textarea::placeholder {
+  color: #b9b9b9;
+}
+
+.product-name {
+  width: 295px;
+}
+
+textarea {
+  width: 100%;
+  height: 194px;
+  font-family: var(--base-font);
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 2px solid var(--dark-bg-solid);
+  padding: 10px;
+}
+
+.cont-sku-price-stock,
+.cont-desc-cuotas,
+.cont-buttons {
+  display: flex;
+  gap: 40px;
+}
+
+.input-stock,
+.input-desc {
+  width: 55px;
+  text-align: center;
+}
+
+.input-img {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form-btn {
+  border: none;
+  width: 175px;
+  height: 44px;
+  background-color: var(--primary-solid);
+  color: var(--light-font-solid);
+  font-size: 14px;
+  font-weight: 600;
 }
 
 /*** Estilos page Edit ***/
 
-.cont-img-cargada {
+.cont-uploaded-img {
   display: flex;
   gap: 24px;
   margin-bottom: 30px;
 }
 
-.cont-img-cargada-frente,
-.cont-img-cargada-dorso {
+.cont-uploaded-img-front,
+.cont-uploaded-img-back {
   width: 150px;
   height: 173px;
   text-align: center;
