@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="/style.css">
   <title>Carrito</title>
 </head>
+
 <body>
   <header>
     <nav class="navbar container">
@@ -47,8 +48,9 @@
   </header>
   <main class="cart-container">
     <h2 class="cart-title">carrito de compras</h2>
-    <section class="cart-cointainer__title">
-      <ul class="cart-cointainer__title-list">
+    <section class="cart-container__elements">
+    <section class="cart-container__elements-title">
+      <ul class="cart-container__title-list">
         <li>
           <h4>detalle de producto</h4>
         </li>
@@ -58,9 +60,12 @@
         <li>
           <h4>total</h4>
         </li>
+        <li>
+          <h4></h4>
+        </li>
       </ul>
     </section>
-    <section class="cart-cointainer__items">
+    <section class="cart-container__elements-items">
       <div class="cart-detail-container">
         <div class="cart-item">
           <picture class="card-item__img">
@@ -90,12 +95,12 @@
       <div class="cart-total-container">
         <h2 class="cart-item__total-price">$ 1799.99</h2>
       </div>
-      <div>
+      <div class="cart-item__exit">
         <button class="cart-item__exit-btn">X</button>
       </div>
     </section>
 
-    <section class="cart-cointainer__items">
+    <section class="cart-container__elements-items">
       <div class="cart-detail-container">
         <div class="cart-item">
           <picture class="card-item__img">
@@ -122,10 +127,11 @@
       <div class="cart-total-container">
         <h2 class="cart-item__total-price">$ 1799.99</h2>
       </div>
-      <div>
+      <div class="cart-item__exit">
         <button class="cart-item__exit-btn">X</button>
       </div>
     </section>
+  </section>
 
     <section class="resume">
       <div>
@@ -150,9 +156,9 @@
         </div>
       </div>
       <span class="cart-item__tag">IR A PAGAR</span>
-
     </section>
   </main>
+
   <footer class="footer">
     <nav class="navbar container">
       <ul class="navbar__items">
