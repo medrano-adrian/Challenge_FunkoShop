@@ -1,0 +1,135 @@
+/**** Estilos comptartidos en pages: Create y Edit ****/
+
+.create-item__section,
+.edit-item__section {
+  padding: var(--spacing-36) 0;
+}
+
+.create-item__title,
+.edit-item__title {
+  font-size: var(--font-jumbo);
+  margin-bottom: var(--spacing-36);
+}
+
+.form-item {
+  font-size: var(--font-large);
+  width: 827px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-36);
+}
+
+.cont-categ-license {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-select {
+  color: #b9b9b9;
+  width: 243px;
+  height: 44px;
+  padding: 2px;
+  border-radius: 6px;
+  border: 2px solid var(--dark-bg-solid);
+  font-family: var(--base-font);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.form-select:focus {
+  color: var(--dark-solid);
+}
+
+.form-input {
+  height: 22px;
+  width: 130px;
+  font-family: var(--base-font);
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  border-bottom: 2px solid var(--primary-solid);
+}
+
+.form-input::placeholder,
+textarea::placeholder {
+  color: #b9b9b9;
+}
+
+.product-name {
+  width: 295px;
+}
+
+textarea {
+  width: 100%;
+  height: 194px;
+  font-family: var(--base-font);
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: 2px solid var(--dark-bg-solid);
+  padding: 10px;
+}
+
+.cont-sku-price-stock,
+.cont-desc-cuotas,
+.cont-buttons {
+  display: flex;
+  gap: var(--spacing-36);
+}
+
+.input-stock,
+.input-desc {
+  width: 55px;
+  text-align: center;
+}
+
+.input-img {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form-btn {
+  border: none;
+  width: 175px;
+  height: 44px;
+  background-color: var(--primary-solid);
+  color: var(--light-font-solid);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-btn:hover {
+  background-color: var(--dark-bg-solid);
+  transition: 0.3s ease-in-out;
+}
+
+/*** Estilos page Edit ***/
+
+.cont-uploaded-img {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.cont-uploaded-img-front,
+.cont-uploaded-img-back {
+  width: 150px;
+  height: 173px;
+  text-align: center;
+}
+
+.cont-img {
+  width: 150px;
+  height: 150px;
+  border-bottom: 2px solid var(--primary-solid);
+}
+
+img {
+  width: 100%;
+}
+
+.img-subtitle {
+  font-size: 20px;
+  font-weight: 500;
+}
