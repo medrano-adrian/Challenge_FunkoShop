@@ -1,7 +1,6 @@
 .container_admin{
     padding: var(--spacing-68);
 }
-
 .search {
     width: 590.88px;
     /* height: 44.28px; */
@@ -35,7 +34,7 @@
 .add{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 h1{
     font-family: Raleway;
@@ -43,15 +42,25 @@ h1{
     font-weight: 700;
     line-height: 49px;
     letter-spacing: 0.04em;
-    text-align: left;
+    /* text-align: left; */
+    padding-right: 425px;
+}
+.addsecond{
+    width: 150px;
+    height: 52px;
+    top: 260.28px;
+    left: 1038px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 h3{
     font-family: Inter;
-    font-size: var(--font-medium);
+    font-size: var(--font-large);
     font-weight: 700;
     line-height: 29px;
     letter-spacing: 0.04em;
-    text-align: right;
+    padding: 6.5px;
 }
 .add__logo{
     width: 52px;
@@ -59,13 +68,23 @@ h3{
     top: 260.28px;
     left: 1184px;
     padding: 6.5px;
+    /* padding-inline-end: 6.5px; */
 /* justify-content: left; */
 }
-#table{
+.table{
     width: 1093.77px;
     height: 844.45px;
     top: 344.78px;
     left: 137.23px;
+    width: 100%; 
+    border-collapse: collapse;
+    /* padding: auto; */
+    display: grid;
+    justify-content: space-between;
+}
+.encabezados, .datos{
+    padding: 0px 12px; 
+    text-align: center;
 }
 .encabezados{
     font-family: Inter;
@@ -73,6 +92,7 @@ h3{
     font-weight: 700;
     line-height: 29px;
     letter-spacing: 0.04em;
+    padding: auto;
 }
 .encabezados__id{
     width: 26px;
@@ -110,7 +130,7 @@ tr,td{
     letter-spacing: 0.04em;
     text-align: center;
 }
-.datos_nom{
+.datos_nom, .datos_cat{
     text-align: left;
 }
 .datos_img{
