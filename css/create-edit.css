@@ -2,13 +2,13 @@
 
 .create-item__section,
 .edit-item__section {
-  padding: 36px 0px;
+  padding: var(--spacing-36) 0;
 }
 
 .create-item__title,
 .edit-item__title {
   font-size: var(--font-jumbo);
-  margin-bottom: 36px;
+  margin-bottom: var(--spacing-36);
 }
 
 .form-item {
@@ -16,7 +16,7 @@
   width: 827px;
   display: flex;
   flex-direction: column;
-  gap: 36px;
+  gap: var(--spacing-36);
 }
 
 .cont-categ-license {
@@ -74,7 +74,7 @@ textarea {
 .cont-desc-cuotas,
 .cont-buttons {
   display: flex;
-  gap: 40px;
+  gap: var(--spacing-36);
 }
 
 .input-stock,
