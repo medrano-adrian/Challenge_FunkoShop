@@ -158,6 +158,11 @@
   .form-cart__submit {
     font-size: var(--font-small);
   }
+
+  .related__products--title {
+    text-align: center;
+    font-size: var(--font-xlarge);
+  }
 }
 
 /* RESPONSIVE MOVIL */
