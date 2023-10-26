@@ -124,3 +124,14 @@
 .chevron-arrows {
   color: var(--dark-500);
 }
+
+
+/* RESPONSIVE TABLET */
+@media screen and (max-width: 768px) {
+  
+}
+
+/* RESPONSIVE MOVIL */
+@media screen and (max-width: 480px) {
+  
+}
