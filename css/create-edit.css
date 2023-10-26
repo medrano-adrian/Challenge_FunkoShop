@@ -183,8 +183,12 @@ img {
 /* RESPONSIVE MOVIL */
 @media screen and (max-width: 480px) {
   .cont-categ-license {
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: var(--spacing-28);
+  }
+
+  .form-select {
+    width: 100%;
   }
 
   .form-input {
