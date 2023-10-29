@@ -136,7 +136,7 @@
 /* RESPONSIVE TABLET */
 @media screen and (max-width: 768px) {
   .card-product {
-    margin: var(--spacing-28) var(--spacing-16);
+    margin: var(--spacing-28) auto;
   }
 
   .card-product__article {
@@ -167,9 +167,14 @@
 
 /* RESPONSIVE MOBILE */
 @media screen and (max-width: 480px) {
+  .card-product {
+    margin-top: 0;
+    margin-bottom: var(--spacing-28);
+  }
+
   .card-product__article {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 1fr auto;
     gap: 0px;
     text-align: center;
   }
