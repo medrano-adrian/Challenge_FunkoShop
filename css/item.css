@@ -165,7 +165,7 @@
   }
 }
 
-/* RESPONSIVE MOVIL */
+/* RESPONSIVE MOBILE */
 @media screen and (max-width: 480px) {
   .card-product__article {
     grid-template-columns: repeat(1, 1fr);
