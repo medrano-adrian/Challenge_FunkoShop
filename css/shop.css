@@ -128,10 +128,36 @@
 
 /* RESPONSIVE TABLET */
 @media screen and (max-width: 768px) {
+  .container-split {
+    display: flex;
+    flex-wrap: wrap;
+  }
+   .filter {
+      height: 50px;
+      overflow: hidden;
+    }
+
+    .search-box {
+      display: flex;
+      justify-content: center;
+    }
+
+
   
+  .shop-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--spacing-24);
+  }
 }
 
 /* RESPONSIVE MOVIL */
 @media screen and (max-width: 480px) {
-  
+  .shop-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: var(--spacing-24);
+  }
 }
