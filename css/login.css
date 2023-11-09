@@ -1,112 +1,77 @@
-.container_login{
-    width: 580px;
-    height: 289.13px;
-    top: 180px;
-    left: 462.5px;
-    border-radius: 3px;
-    padding: var(--spacing-24) var(--spacing-68);
-    margin: 20px;
+.login-title {
+  text-align: center;
+  color: #1f1f1f;
+  font-family: var(--alternative-font);
+  font-size: var(--font-jumbo);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.68px;
 }
-h1{
-    font-family: Raleway;
-    font-size: var(--spacing-36);
-    font-weight: 700;
-    line-height: 49px;
-    letter-spacing: 0.04em;
-    text-align: center;
-    margin-bottom: 10px;
-}
-#form{
-    width: 382.87px;
-    height: 98.72px;
-    top: 256.07px;
-    left: 528.56px;
-    margin: 10px auto;
-    top: 50%;
-}
-.forms{
-    width: 450px;
-    height: 98.72px;
-    top: 256.07px;
-    left: 528.56px;
-    margin: 10px;
-}
-.form__labele{
-    font-family: Inter;
-    font-size: var(--spacing-24);
-    font-weight: 400;
-    line-height: 29px;
-    letter-spacing: 0.04em;
-    text-align: left;
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-}
-#email{
-    width: 208.6px;
-    height: 25.18px;
-    top: 261.07px;
-    left: 702.83px;
-    font-family: Inter;
-    font-size: var(--spacing-16);
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0.04em;
-    text-align: left;
-}
-.form__labelep{
-    font-family: Inter;
-    font-size: var(--spacing-24);
-    font-weight: 400;
-    line-height: 29px;
-    letter-spacing: 0.04em;
-    text-align: left;
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-}
-#password{
-    width: 208.6px;
-    height: 25.18px;
-    top: 261.07px;
-    left: 702.83px;
-    font-family: Inter;
-    font-size: var(--spacing-16);
-    font-weight: 400;
-    line-height: 19px;
-    letter-spacing: 0.04em;
-    text-align: left;
-}
-.btn-enviar{
-    width: 103px;
-    height: 39.06px;
-    top: 390.78px;
-    left: 583.26px;
-    background-color: var(--primary-solid);
-    color: var(--light-font-solid);
-    font-family: Inter;
-    font-size: var(--spacing-12);
-    font-weight: 400;
-    line-height: 15px;
-    letter-spacing: 0em;
-    text-align: center;  
-    border: none;  
-}
-.input_enviar{
-    width: 129.25px;
-    height: 22px;
-    top: 399.32px;
-    left: 727.49px;
-    border-radius: 3px;
-   font-size: var(--spacing-16);
-}
-p{
-    font-family: Inter;
-    font-size: var(--spacing-12);
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0em;
-    color: #1D84B5;
-    text-align: center;
 
+.form-login {
+  width: 457px;
+  margin: 36px auto;
+  font-size: var(--font-large);
+  font-family: var(--base-font);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+.form-login input {
+  border: none;
+  border-bottom: 2px solid var(--primary-solid);
+}
+
+::placeholder {
+  color: #b9b9b9;
+  font-family: var(--base-font);
+  font-size: var(--font-small);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.64px;
+}
+.login-submit {
+  display: flex;
+  gap: 45px;
+  justify-content: center;
+align-items: center;
+}
+.login-submit p {
+    color: #1F1F1F;
+font-family: var(--base-font);
+font-size: var(--font-medium);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.remember {
+    display: flex;
+    gap: 15px;
+}
+button {
+  background-color: #ff3333;
+  border: none;
+  width: 102.995px;
+  height: 39.062px;
+  color: var(--light-font-solid);
+  font-family: var(--base-font);
+  font-size: var(--font-xsmall);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.forgot-password {
+    text-align: center;
+    padding: 36px;
+  color: #1d84b5;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
