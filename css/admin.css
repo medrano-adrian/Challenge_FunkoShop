@@ -4,7 +4,7 @@
 
 .form-product-search {
   display: flex;
-  width: 590.88px;
+  max-width: 590.88px;
   height: 44.28px;
   gap: 10px;
   margin-bottom: var(--spacing-36);
@@ -151,5 +151,10 @@
   }
   .cont-btns {
     gap: var(--spacing-16);
+  }
+
+  .id-title,
+  .id-article {
+    display: none;
   }
 }
