@@ -4,21 +4,21 @@
     <div class="login-title">
       <h2>INGRESAR A MI CUENTA</h2>
     </div>
-    <form action="" class="form-login">
-      <label for="email">Email:</label>
-      <input type="email" id="email" placeholder="johndoe@correo.com" autocomplete="on" />
-      <label for="password">Contraseña:</label>
-      <input type="password" id="password" placeholder="*********" />
-    </form>
-    <div class="login-submit">
-      <div>
+    <form action="/admin" method="post">
+      <div class="form-login">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="johndoe@correo.com" autocomplete="on" />
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" placeholder="*********" />
+      </div>
+      <div class="login-submit">
         <button type="submit">Ingresar</button>
+        <div class="remember">
+          <input type="checkbox" name="remember-me" />
+          <p>Recordarme</p>
+        </div>
       </div>
-      <div class="remember">
-        <input type="checkbox" name="remember-me" />
-        <p>Recordarme</p>
-      </div>
-    </div>
+    </form>
 
     <div class="forgot-password">
       <a href="">Olvide mi contraseña</a>

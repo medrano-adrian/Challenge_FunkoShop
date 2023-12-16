@@ -17,7 +17,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 20px;
+  gap: 10px;
+  background-color: "red";
 }
 .form-login input {
   border: none;
@@ -36,20 +37,20 @@
   display: flex;
   gap: 45px;
   justify-content: center;
-align-items: center;
+  align-items: center;
 }
 .login-submit p {
-    color: #1F1F1F;
-font-family: var(--base-font);
-font-size: var(--font-medium);
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  color: #1f1f1f;
+  font-family: var(--base-font);
+  font-size: var(--font-medium);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .remember {
-    display: flex;
-    gap: 15px;
+  display: flex;
+  gap: 15px;
 }
 button {
   background-color: #ff3333;
@@ -66,8 +67,8 @@ button {
 }
 
 .forgot-password {
-    text-align: center;
-    padding: 36px;
+  text-align: center;
+  padding: 36px;
   color: #1d84b5;
   font-family: Inter;
   font-size: 14px;

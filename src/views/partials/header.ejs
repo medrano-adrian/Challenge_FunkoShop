@@ -11,47 +11,75 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
     <link rel="stylesheet" type="text/css" href="/style.css" />
-    <link rel="stylesheet" type="text/css" href="/css/shop.css" />
+
     <link rel="stylesheet" type="text/css" href="/css/cart.css">
     <link rel="stylesheet" type="text/css" href="/css/item.css">
     <link rel="stylesheet" type="text/css" href="/css/login.css" />
+    <link rel="stylesheet" type="text/css" href="/css/register.css" />
+    <link rel="stylesheet" type="text/css" href="/css/create-edit.css" />
+    <link rel="stylesheet" type="text/css" href="/css/admin.css">
+    <link rel="stylesheet" type="text/css" href="/css/shop.css" />
+
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar container">
-            <picture class="navbar__logo">
-                <a href="/">
-                    <img src="/img/branding/logo_light_horizontal.svg" alt="logo" />
-                </a>
-            </picture>
-            <ul class="navbar__menu">
-                <li class="navbar__item with-submenu">
-                    <a class="navbar__link with-icon" href="/shop">SHOP <iconify-icon
-                            icon="mdi:chevron-down"></iconify-icon></a>
-                    <ul class="submenu">
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Funkos</a>
+        <% if (!isLogged) { %>
+            <nav class="navbar container">
+                <picture class="navbar__logo">
+                    <a href="/">
+                        <img src="/img/branding/logo_light_horizontal.svg" alt="logo" />
+                    </a>
+                </picture>
+                <ul class="navbar__menu">
+                    <li class="navbar__item with-submenu">
+                        <a class="navbar__link with-icon" href="/shop">SHOP <iconify-icon
+                                icon="mdi:chevron-down"></iconify-icon></a>
+                        <ul class="submenu">
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">Funkos</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">Remeras</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="" class="submenu__link">LLaveros</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="">CONTACTO</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="/auth/login">LOGIN</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__cart" href="/shop/cart"><img src="/img/icons/cart-icon.svg"
+                                alt="icono del carrito" /></a>
+                    </li>
+                </ul>
+            </nav>
+            <% } else { %>
+                <nav class="navbar container">
+                    <picture class="navbar__logo">
+                        <a href="/home">
+                            <img src="/img/branding/logo_light_horizontal.svg" alt="isoLogotipo de la Marca Funkoshop">
+                        </a>
+                    </picture>
+
+                    <ul class="navbar__menu">
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="/shop">VER TIENDA</a>
                         </li>
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">Remeras</a>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="/admin">ADMIN</a>
                         </li>
-                        <li class="submenu__item">
-                            <a href="" class="submenu__link">LLaveros</a>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="/home">SALIR</a>
                         </li>
                     </ul>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="">CONTACTO</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__link" href="/auth/login">LOGIN</a>
-                </li>
-                <li class="navbar__item">
-                    <a class="navbar__cart" href="/shop/cart"><img src="/img/icons/cart-icon.svg"
-                            alt="icono del carrito" /></a>
-                </li>
-            </ul>
-        </nav>
+                </nav>
+                <% } %>
+
     </header>
