@@ -1,12 +1,12 @@
 const express = require("express");
 const router = express.Router();
-//const adminControllers = require("../controllers/adminController");
+const adminControllers = require("../controllers/adminController");
 
-router.get("/", (req, res) => res.send("route for admin view"));
-router.get("/create", (req, res) => res.send("route for admin create"));
-router.post("/create", (req, res) => res.send("route for admin create"));
-router.get("/edit/:id", (req, res) => res.send("route for create"));
-router.put("/edit/:id", (req, res) => res.send("route for edit"));
-router.delete("/delete/:id", (req, res) => res.send("route for delete"));
+router.get("/", adminControllers.admin);
+router.get("/create", adminControllers.create);
+router.post("/create", adminControllers.submitCreate);
+router.get("/edit/:id", adminControllers.edit);
+router.put("/edit/:id", adminControllers.submitEdit);
+router.delete("/delete/:id", adminControllers.delete);
 
 module.exports = router;
