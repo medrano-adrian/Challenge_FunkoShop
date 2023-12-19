@@ -15,8 +15,8 @@
   border-radius: 6px;
   border: 2px solid var(--dark-bg-solid);
   font-family: var(--base-font);
-  font-size: var(--font-medium);
-  font-weight: 500;
+  /* font-size: var(--font-medium);
+  font-weight: 500; */
 }
 
 .input-product-search::placeholder {

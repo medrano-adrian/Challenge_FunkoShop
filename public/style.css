@@ -259,17 +259,17 @@ header {
   text-transform: uppercase;
 }
 
-iconify-icon {
+.iconify-icon {
   color: var(--dark-bg-solid);
   font-size: var(--font-small);
   font-weight: 700;
 }
 
-.glide__arrow glide__arrow--left{
+.glide__arrow glide__arrow--left {
   left: 0;
 }
 
-.glide__arrow glide__arrow--right{
+.glide__arrow glide__arrow--right {
   right: 0;
 }
 
@@ -289,7 +289,7 @@ iconify-icon {
 }
 
 .card-item__cover img {
-  animation: fade .7s;
+  animation: fade 0.7s;
 }
 
 .card-item__img--back {
@@ -333,24 +333,21 @@ iconify-icon {
 
 /* FOOTER */
 
-
 .footer {
-   background-color: var(--dark-bg-solid);
-   padding: var(--spacing-68);
+  background-color: var(--dark-bg-solid);
+  padding: var(--spacing-68);
 }
 
 .footer__copy {
   margin-top: var(--spacing-36);
   text-align: center;
-
 }
 /* ANIMATION */
 @keyframes fade {
-  0%{
+  0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
   }
 }
-
